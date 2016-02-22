@@ -1,0 +1,38 @@
+table {
+    border: 5px solid #909098;
+    border-collapse: collapse;
+}
+p { margin-top:10px; }
+
+tr, td {
+    border: 5px solid #909098;
+    font-size: 45px;
+    width:1.75em; 
+    height:1.75em;  
+    text-align: center;
+    background: linear-gradient(to bottom right, white 5%,black 40%); /* Standard syntax */
+    //background: black;    
+    color: white; 
+}
+td:empty{
+    background: white;
+}
+
+#game-field{
+    margin-top: 20px;
+}
+#header{
+    color: #54555a;
+}
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #54555a;
+}
+#restart{
+    width:70px;
+    height: 30px;
+    color: #54555a;
+    font-weight: bold;
+    font-size: 14px;
+}
