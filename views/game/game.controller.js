@@ -166,16 +166,16 @@ app.controller('gameController',function($rootScope, $scope){
         }
         makeSolvable(count);
     }
-    $(document).ready(function (){
-        $('td').click(function(){
-            chooseClick(+($(this).attr('id')));
-        });
+    //$(document).ready(function (){
+    $('td').click(function(){
+        chooseClick(+($(this).attr('id')));
     });
-    $(document).keydown(function(e){
-        key = e.which - 37;
-        if(key >= 0 && key <= 3 && !stop)
-            chooseArrow(key);
-    });
+    //});
+    //$(document).keydown(function(e){
+      //  key = e.which - 37;
+       // if(key >= 0 && key <= 3 && !stop)
+         //   chooseArrow(key);
+    //});
 $scope.load();
 });
 
