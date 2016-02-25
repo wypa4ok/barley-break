@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="dist/css/mobile-angular-ui-base.min.css" />
         <link rel="stylesheet" href="dist/css/mobile-angular-ui-desktop.min.css" />
         
-        <link rel="stylesheet" href="views/game/game.css" />
+        <link rel="stylesheet" href="main.css" />
         
         
         
@@ -31,7 +31,7 @@
         
         <!-- Required to use $touch, $swipe, $drag and $translate services -->
         <script src="dist/js/mobile-angular-ui.gestures.min.js"></script>
-        <script src="app.js"></script>
+        <script src="index.js"></script>
         
         <script src="views/game/game.controller.js"></script>
         
