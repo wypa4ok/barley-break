@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Barley-Break</name>
+
+    <description>
+        Barley-Break game. 
+    </description>
+
+    <author href="https://wypa4ok.github.io" email="wupa4ok@gmail.com">
+        Pavlo Petrushko
+    </author>
+
+</widget>
