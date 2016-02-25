@@ -176,6 +176,6 @@ app.controller('gameController',function($rootScope, $scope){
        // if(key >= 0 && key <= 3 && !stop)
          //   chooseArrow(key);
     //});
-$scope.load();
+    $scope.load();
 });
 

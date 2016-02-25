@@ -21,14 +21,16 @@
         
     </head>
     <body ng-app="MobileAngularUiExamples" ng-controller="MainController" ui-prevent-touchmove-defaults>
-        
+
+        <p>This is the main view</p>
           <ng-view></ng-view>
 
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
+        <script src="dist/js/angular.min.js"></script>
+        <script src="dist/js/angular-route.min.js"></script>
+        <script src="dist/js/jquery.min.js"></script>
+        
         <script src="dist/js/mobile-angular-ui.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         
         <!-- Required to use $touch, $swipe, $drag and $translate services -->
         <script src="dist/js/mobile-angular-ui.gestures.min.js"></script>
