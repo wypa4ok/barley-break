@@ -157,8 +157,6 @@ app.controller('gameController',function($rootScope, $scope){
         $("#timer").text(time);
         
         count = shuffle(count);
-        console.log(count);
-        
        
         for (p = 0; p < count.length; p++){
             if(count[p] == 0){
@@ -167,7 +165,6 @@ app.controller('gameController',function($rootScope, $scope){
             $('#'+(p)).html((count[p] != 0 ? count[p] : ''));
         }
         makeSolvable(count);
-        console.log(mergeCount(count).count)
     }
     $(document).ready(function (){
         $('td').click(function(){

@@ -16,8 +16,8 @@ app.run(function($transform) {
 });
 
 app.config(function($routeProvider) {
-  $routeProvider.when('/', {controller:'gameController', templateUrl: 'views/game/game.html', reloadOnSearch: false});
-  //$routeProvider.when('/game', {controller:'scrGameController', templateUrl: 'game/scrGame/scrGame.html', reloadOnSearch: false}); 
+  $routeProvider.when('/', {controller:'startController', templateUrl: 'views/start/start.html', reloadOnSearch: false});
+  $routeProvider.when('/game', {controller:'gameController', templateUrl: 'views/game/game.html', reloadOnSearch: false}); 
 });
 
 app.controller('MainController', function($rootScope, $scope){
