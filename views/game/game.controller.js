@@ -1,4 +1,4 @@
-app.controller('gameController',function($rootScope, $scope){
+app.controller('gameController',function($rootScope, $scope, $location){
 
 	var result,count,win,stop,time,c,key,f = 15;
     
@@ -170,10 +170,15 @@ app.controller('gameController',function($rootScope, $scope){
         
         $("#out").text(result);
         $("#timer").text(time);
-
-        
         
     }
+
+    $scope.go = function ( path ) {
+        if(path == '/'){
+            $scope.stopTimer();
+        } 
+        $location.path( path ); 
+    };
     //$(document).ready(function (){
     $('td').click(function(){
         chooseClick(+($(this).attr('id')));

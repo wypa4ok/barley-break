@@ -29,7 +29,7 @@ td:empty{
     font-weight: bold;
     color: #54555a;
 }
-#restart, #give-up{
+#restart{
     width:70px;
     height: 30px;
     color: #54555a;
@@ -37,6 +37,9 @@ td:empty{
     font-size: 14px;
 }
 #give-up{
+    width:100px;
+    height: 40px;
+    font-weight: bold;
     font-size: 18px;
     color: red;
 }
