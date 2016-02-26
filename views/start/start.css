@@ -1,8 +1,10 @@
 #start-box{
+	color: #54555a;
 	text-align: center;
 	margin: 20px;
 }
 #start-game{
+	margin-top: 20px;
 	font-size: 20px;
 	height: 50px;
 	width: 150px;
