@@ -29,10 +29,17 @@ td:empty{
     font-weight: bold;
     color: #54555a;
 }
-#restart{
+#restart, #give-up{
     width:70px;
     height: 30px;
     color: #54555a;
     font-weight: bold;
     font-size: 14px;
+}
+#give-up{
+    font-size: 18px;
+    color: red;
+}
+.give-up{
+    margin-top: 20px;
 }

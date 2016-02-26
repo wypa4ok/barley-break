@@ -83,6 +83,7 @@ app.controller('gameController',function($rootScope, $scope){
         return Math.floor(n/4)==Math.floor(m/4);
     }
     function swap(a, b){
+        //console.log("swap: " + a + " and " + b);
         f=a;
         $('#'+(b)).html(count[a]);
         $('#'+(a)).html('');
@@ -94,7 +95,8 @@ app.controller('gameController',function($rootScope, $scope){
         $("#out").text(result);
         stop = check();
         if(stop){
-            alert("Congratulations");stopTimer();
+            alert("Congratulations");
+            $scope.stopTimer();
         }
     }
     function chooseClick(num){
@@ -114,7 +116,8 @@ app.controller('gameController',function($rootScope, $scope){
             $("#timer").text(time);
         } ,1000)
     }
-    function stopTimer(){
+    $scope.stopTimer = function(){
+        $("#out").text(0);
         clearInterval(c);
     }
     function chooseArrow(k){
@@ -127,8 +130,9 @@ app.controller('gameController',function($rootScope, $scope){
             swap(f+4, f);
         if(k == 3 && f-4 >= 0)
             swap(f-4, f);
-         console.log(f);
+         
     }
+   
 
     $scope.load = function(){ 
         //var arr = [3,1,2,4,5];
@@ -138,7 +142,7 @@ app.controller('gameController',function($rootScope, $scope){
         count=[];
         win=[];
         stop=false;
-        stopTimer();
+        $scope.stopTimer();
         startTimer();
         
         for (p = 0; p < 16; p++){
@@ -149,13 +153,6 @@ app.controller('gameController',function($rootScope, $scope){
             });
         }
 
-        win.push(0);
-        result = 0;
-        time=0;
-        
-        $("#out").text(result);
-        $("#timer").text(time);
-        
         count = shuffle(count);
        
         for (p = 0; p < count.length; p++){
@@ -165,17 +162,28 @@ app.controller('gameController',function($rootScope, $scope){
             $('#'+(p)).html((count[p] != 0 ? count[p] : ''));
         }
         makeSolvable(count);
+
+
+        win.push(0);
+        result = 0;
+        time=0;
+        
+        $("#out").text(result);
+        $("#timer").text(time);
+
+        
+        
     }
     //$(document).ready(function (){
     $('td').click(function(){
         chooseClick(+($(this).attr('id')));
     });
     //});
-    //$(document).keydown(function(e){
-      //  key = e.which - 37;
-       // if(key >= 0 && key <= 3 && !stop)
-         //   chooseArrow(key);
-    //});
+    $(document).keydown(function(e){
+        key = e.which - 37;
+        if(key >= 0 && key <= 3 && !stop)
+            chooseArrow(key);
+    });
     $scope.load();
 });
 

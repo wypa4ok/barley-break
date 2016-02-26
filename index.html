@@ -16,13 +16,14 @@
         <link rel="stylesheet" href="dist/css/mobile-angular-ui-desktop.min.css" />
         
         <link rel="stylesheet" href="views/game/game.css" />
+        <link rel="stylesheet" href="views/start/start.css" />
         
         
         
     </head>
     <body ng-app="MobileAngularUiExamples" ng-controller="MainController" ui-prevent-touchmove-defaults>
 
-        <p>This is the main view</p>
+        
           <ng-view></ng-view>
 
 
@@ -34,6 +35,7 @@
         
         <!-- Required to use $touch, $swipe, $drag and $translate services -->
         <script src="dist/js/mobile-angular-ui.gestures.min.js"></script>
+        
         <script src="cordova.js"></script> 
         <script src="app.js"></script>
         
