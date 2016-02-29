@@ -59,13 +59,14 @@ app.controller('gameController',function($rootScope, $scope, $location){
     };
 
     function makeSolvable(arr){
-        if(mergeCount(arr).count % 2 != 0)  
-        for(var i=0; i<arr.length - 1; i++){
-            if(arr[i] != 0 && arr[i+1] != 0){
-                var x = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = x;
-                break;
+        if(mergeCount(arr).count % 2 == 0){  
+            for(var i=0; i<arr.length - 1; i++){
+                if(arr[i] != 0 && arr[i+1] != 0){
+                    var x = arr[i];
+                    arr[i] = arr[i+1];
+                    arr[i+1] = x;
+                    break;
+                }
             }
         }
     };
