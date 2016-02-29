@@ -1,3 +1,6 @@
+body{
+    overflow-y: scroll;
+}
 table {
     border: 5px solid #909098;
     border-collapse: collapse;
