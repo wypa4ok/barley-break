@@ -18,7 +18,7 @@
         Pavlo Petrushko
     </author>
 
-    <preference name="Orientation" value="portrait" />
+    <preference name="orientation" value="portrait" />
 
 </widget>
 
